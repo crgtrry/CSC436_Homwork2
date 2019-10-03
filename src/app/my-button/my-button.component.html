@@ -1,4 +1,4 @@
 <!DOCTYPE html>
-<button (click)="handleClick($event)" type="button">
+<button (click)="handleClick($event)" type="button" ng-class="{'is-liked': liked == true}">
   <span class="MyButtonComponent"> {{ liked ? 'liked' : 'Not Liked' }} </span>
 </button>
