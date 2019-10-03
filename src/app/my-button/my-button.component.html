@@ -1,1 +1,4 @@
-<p>my-button works!</p>
+<!DOCTYPE html>
+<button (click)="handleClick($event)" type="button">
+  <span class="MyButtonComponent"> {{ liked ? 'liked' : 'Not Liked' }} </span>
+</button>
