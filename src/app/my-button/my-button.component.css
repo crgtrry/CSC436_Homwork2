@@ -3,6 +3,6 @@ button {
   color: #FFFFFF
 }
 
-is-liked {
+.is-liked {
   background-color: green;
 }
