@@ -1,4 +1,4 @@
 <!DOCTYPE html>
-<button (click)="handleClick($event)" type="button">
+<button (click)="handleClick($event)"  type="button" [ngClass]="{'is-liked' : liked}">
   <span class="MyButtonComponent"> {{ liked ? 'liked' : 'Not Liked' }} </span>
 </button>
