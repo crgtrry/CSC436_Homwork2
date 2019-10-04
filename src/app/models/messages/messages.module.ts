@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   ]
 })
 export class MessagesModule {
-  messages: MessageModule[];
+  messages: Array<MessageModule> = [];
   index: number;
 
   constructor() {
@@ -17,7 +17,15 @@ export class MessagesModule {
   }
 
   addMessage(m: MessageModule) {
-    this.messages[this.index] = m;
+    this.messages.push(m);
     this.index = this.index + 1;
+  }
+
+  size(): number {
+    return this.messages.length;
+  }
+
+  getMessages(): Array<MessageModule> {
+    return this.messages;
   }
 }
